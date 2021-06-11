@@ -1,0 +1,39 @@
+{
+  "Webscope_C14_Set1": {
+    "num_folds": 1,
+    "fold_paths": 
+      [
+        "/PATH/TO/Webscope_C14_Set1/"
+      ],
+    "num_relevance_labels": 5,
+    "num_nonzero_feat": 519,
+    "num_unique_feat": 501,
+    "query_normalized": true
+  },
+  "MSLR-WEB30k": {
+    "num_folds": 5,
+    "fold_paths": 
+      [
+        "/PATH/TO/MSLR-WEB30k/Fold1/",
+        "/PATH/TO/MSLR-WEB30k/Fold2/",
+        "/PATH/TO/MSLR-WEB30k/Fold3/",
+        "/PATH/TO/MSLR-WEB30k/Fold4/",
+        "/PATH/TO/MSLR-WEB30k/Fold5/"
+      ],
+    "num_relevance_labels": 5,
+    "num_nonzero_feat": 136,
+    "num_unique_feat": 131,
+    "query_normalized": false
+  },
+  "istella": {
+    "num_folds": 1,
+    "fold_paths": 
+      [
+        "/PATH/TO/istella/"
+      ],
+    "num_relevance_labels": 5,
+    "num_nonzero_feat": 220,
+    "num_unique_feat": 193,
+    "query_normalized": false
+  }
+}
