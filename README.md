@@ -8,7 +8,7 @@ If you use this code to produce results for your scientific publication, or if y
 ```
 @inproceedings{oosterhuis2021plrank,
   Author = {Oosterhuis, Harrie},
-  Booktitle = {Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR`21)},
+  Booktitle = {Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR`21)},
   Organization = {ACM},
   Title = {Computationally Efficient Optimization of Plackett-Luce Ranking Models for Relevance and Fairness},
   Year = {2021}
