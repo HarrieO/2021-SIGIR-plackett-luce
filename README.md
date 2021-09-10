@@ -36,10 +36,10 @@ First create a folder to store the resulting models:
 ```
 mkdir local_output
 ```
-To optimize NDCG use *run.py* with the *--loss* flag to indicate the loss to use (PL_rank_1/PL_rank_2/lambdaloss/pairwise/policygradient/placementpolicygradient); *--cutoff* indicates the top-k that is being optimized, e.g. 5 for NDCG@5; *--num_samples* the number of samples to use per gradient estimation (with *dynamic* for the dynamic strategy); *--dataset* indicates the dataset name, e.g. *Webscope_C14_Set1*.
+To optimize DCG use *run.py* with the *--loss* flag to indicate the loss to use (PL_rank_1/PL_rank_2/lambdaloss/pairwise/policygradient/placementpolicygradient); *--cutoff* indicates the top-k that is being optimized, e.g. 5 for DCG@5; *--num_samples* the number of samples to use per gradient estimation (with *dynamic* for the dynamic strategy); *--dataset* indicates the dataset name, e.g. *Webscope_C14_Set1*.
 The following command optimizes DCG@5 with PL-Rank-2 and the dynamic sampling strategy on the Yahoo! dataset:
 ```
-python3 run.py local_output/yahoo_ndcg5_dynamic_plrank2.txt --num_samples dynamic --loss PL_rank_2 --cutoff 5 --dataset Webscope_C14_Set1
+python3 run.py local_output/yahoo_dcg5_dynamic_plrank2.txt --num_samples dynamic --loss PL_rank_2 --cutoff 5 --dataset Webscope_C14_Set1
 ```
 To optimize the disparity metric for exposure fairness use *fairrun.py* this has the additional flag *--num_exposure_samples* for the number of samples to use to estimate exposure (this must always be a greater number than *--num_samples*).
 The following command optimizes disparity with PL-Rank-2 and the dynamic sampling strategy on the Yahoo! dataset with 1000 samples for estimating exposure:
