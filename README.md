@@ -37,7 +37,7 @@ First create a folder to store the resulting models:
 mkdir local_output
 ```
 To optimize NDCG use *run.py* with the *--loss* flag to indicate the loss to use (PL_rank_1/PL_rank_2/lambdaloss/pairwise/policygradient/placementpolicygradient); *--cutoff* indicates the top-k that is being optimized, e.g. 5 for NDCG@5; *--num_samples* the number of samples to use per gradient estimation (with *dynamic* for the dynamic strategy); *--dataset* indicates the dataset name, e.g. *Webscope_C14_Set1*.
-The following command optimizes NDCG@5 with PL-Rank-2 and the dynamic sampling strategy on the Yahoo! dataset:
+The following command optimizes DCG@5 with PL-Rank-2 and the dynamic sampling strategy on the Yahoo! dataset:
 ```
 python3 run.py local_output/yahoo_ndcg5_dynamic_plrank2.txt --num_samples dynamic --loss PL_rank_2 --cutoff 5 --dataset Webscope_C14_Set1
 ```
