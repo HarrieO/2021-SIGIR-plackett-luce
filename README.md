@@ -1,6 +1,8 @@
 # Computationally Efficient Optimization of Plackett-Luce Ranking Models for Relevance and Fairness
 This repository contains the code used for the experiments in "Computationally Efficient Optimization of Plackett-Luce Ranking Models for Relevance and Fairness" published at SIGIR 2021 ([preprint available](https://harrieo.github.io//publication/2021-plrank)).
 
+There has been a follow-up to this work at SIGIR'22, that includes a more efficient implementation of the algorithms in this repository: [paper](https://harrieo.github.io//publication/2021-plrank) and [code](https://github.com/HarrieO/2022-SIGIR-plackett-luce).
+
 Citation
 --------
 
